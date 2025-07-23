@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "date-block",
+  "type": "registry:component",
+  "title": "DateBlock",
+  "description": "Компонент, который форматирует и отображает дату.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/components/DateBlock.tsx",
+      "content": "import { formatDate } from \"../utils/formatDate\";\r\n\r\nexport interface DateBlockProps {\r\n  date: Date | string;\r\n  locale?: string;\r\n}\r\n\r\nexport const DateBlock: React.FC<DateBlockProps> = ({ date, locale }) => (\r\n  <div>{formatDate(date, locale)}</div>\r\n);\r\n",
+      "type": "registry:component"
+    },
+    {
+      "path": "registry/utils/formatDate.ts",
+      "content": "export function formatDate(date: Date | string, locale: string = \"ru-RU\"): string {\r\n  const d = typeof date === \"string\" ? new Date(date) : date;\r\n  return d.toLocaleDateString(locale, {\r\n    year: \"numeric\",\r\n    month: \"long\",\r\n    day: \"numeric\",\r\n  });\r\n} ",
+      "type": "registry:lib"
+    }
+  ]
+}

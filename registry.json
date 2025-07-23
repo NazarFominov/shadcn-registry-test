@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "shadcn-registry",
+  "homepage": "https://github.com/your-org/shadcn-registry",
+  "items": [
+    {
+      "name": "date-block",
+      "type": "registry:component",
+      "title": "DateBlock",
+      "description": "Компонент, который форматирует и отображает дату.",
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/components/DateBlock.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/utils/formatDate.ts",
+          "type": "registry:lib"
+        }
+      ]
+    }
+  ]
+}
