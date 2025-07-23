@@ -1,0 +1,10 @@
+{
+  "name": "DateBlock",
+  "type": "component",
+  "description": "Компонент, который форматирует и отображает дату.",
+  "files": [
+    "src/components/DateBlock.tsx",
+    "src/utils/formatDate.ts"
+  ],
+  "dependencies": []
+} 
